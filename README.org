@@ -1,0 +1,24 @@
+* stupid-name-generator
+A user name generator, made in pure HTML, CSS and JavaScript. The name comes from my brief frustration when writing the prototype, but it doubles as a reflection of its nature: it's not smart, it doesn't do anything particularly fancy.
+
+The original version of this generator dates from June 7, 2022, and it's written in Python. In fact, porting it to JavaScript was the least time-consuming step.
+
+** How it works
+This tool generates syllables with a CV[C] structure, that is, a consonant followed by a vowel and an optional final consonant. For the first syllable, the first consonant is optional as well. The intent of this tool is to generate names that can be pronounced, but it doesn't do an amazing job at that, so you may want to tweak the result a bit.
+
+** How to use
+1. Select a number of syllables for your generated username.
+2. Click on "Generate name".
+3. Repeat until you're satisfied.
+4. Copy your name, and optionally tweak it manually.
+5. ???
+6. Profit?
+
+** Deploy
+#+BEGIN_SRC sh
+WEB_SERVER_ROOT='/var/www/'
+mv index.html style.css script.js "$WEB_SERVER_ROOT"
+#+END_SRC
+
+** License
+This project is licensed under the public-domain-equivalent [[https://opensource.org/license/0bsd/][BSD Zero Clause License]].
