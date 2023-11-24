@@ -1,0 +1,115 @@
+body {
+  background-color: #222;
+  color: #ddd;
+  font-family: Fira Sans, Inter, sans-serif;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70svh;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 39.99em) {
+	main {
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #333;
+		border-radius: 1.5em;
+		box-shadow: 0em 0em 3em black;
+
+	}
+}
+
+@media (min-width: 40em) {
+	main {
+		width: 35em;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #333;
+		border-radius: 1.5em;
+		box-shadow: 0em 0em 3em black;
+
+	}
+}
+
+#genName {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1.5em;
+  margin-bottom: 1.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  word-break: break-word;
+}
+
+form {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+label {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  text-align: right;
+}
+
+#syllables {
+  max-width: 3em;
+  grid-column-start: 2;
+  height: 1rem;
+	color: #000;
+	background-color: #fff;
+}
+
+#generate {
+  font-size: 1.1em;
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+details {
+	max-width: 30em;
+	margin: auto;
+	padding: 1em;
+	background-color: #333;
+}
+
+a {
+  color: rgb(200, 130, 20);
+}
+
+a:visited {
+  color: rgb(200, 140, 150);
+}
+
+@media (max-width: 30em) {
+  form {
+    margin-top: 1em;
+    margin-bottom: 0.75em;
+  }
+  label {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  #syllables {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+  #generate {
+    margin-top: 1em;
+    grid-column-start: 2;
+    grid-column-end: 6;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Stupid name generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<main>
+				<output id="genName">Enable Javascript to use this page</output>
+				<form>
+					<label for="syllables">Number of syllables</label>
+					<input type="number" id="syllables" name="syllables" min="1" max="10" value="3">
+					<input type="button" id="generate" value="Generate name">
+				</form>
+			</main>
+		</div>
+		<details>
+			<summary>About this page</summary>
+			<p>This page is a username generator. It generates syllables with a CV[C] structure,
+				that is, a consonant followed by a vowel and an optional final consonant.
+				For the first syllable, the first consonant is optional as well.</p>
+			<p>The intent of this tool is to generate names that can be pronounced.
+				It doesn't do an amazing job at that, so you may want to tweak the result a bit.</p>
+			<p>The source code is
+				<a href="https://github.com/hlischt/stupid-name-generator">available on Github</a>
+				or in your browser, by right-clicking and selecting "View Page Source".</p>
+		</details>
+	</body>
+</html>
